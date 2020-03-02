@@ -1,7 +1,7 @@
 public class Student extends Person{
     private Section[] sections = new Section[10];
     private int grade;
-    private int sectionsCount = 0;
+    private int sectionCount = 0;
 
     public Student(String name, int id, int grade){
         super(name, id);
@@ -21,7 +21,7 @@ public class Student extends Person{
     }
 
     public void addSections(Section s){
-        this.sections[sectionsCount] = s;
-        sectionsCount++;
+        this.sections[sectionCount] = s;
+        sectionCount++;
     }
 }

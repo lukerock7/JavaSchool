@@ -34,14 +34,14 @@ public class Section {
     }
 
     public String toString() {
-        String r = "This " + this.name + " class is taught by " + this.teacher.getName() + " and has " +
+        String a = "This " + this.name + " class is taught by " + this.teacher.getName() + " and has " +
                 this.currentSize + " students: ";
 
         for(int i = 0; i < currentSize; i++){
-            r += students[i].getName();
-            r += ", ";
+            a += students[i].getName();
+            a += ", ";
         }
 
-        return r;
+        return a;
     }
 }
